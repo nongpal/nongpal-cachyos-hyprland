@@ -1,0 +1,60 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "padding": {
+      "top": 2,
+      //"left": 5
+    },
+    //"width": 20,
+    //"height": 10,
+    "source": "$HOME/.config/fastfetch/template.txt"
+  },
+  "display": {
+    "separator": " ->  ",
+    "color": "default"
+  },
+  "modules": [
+    {
+      "type": "break"
+    },
+    {
+      "type": "command",
+      "key": "  ",
+      "keyColor": "blue",
+      "text": "splash=$(hyprctl splash);echo $splash"
+    },
+    {
+      "type": "custom",
+      "format": "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+    },
+    {
+      "type": "host",
+      "key": "  󰇺 Host  "
+    },
+    {
+      "type": "os",
+      "key": "   OS    ",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "kernel",
+      "key": "   Kernel",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "uptime",
+      "key": "   Uptime"
+    },
+    {
+      "type": "custom",
+      "format": "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+    },
+    {
+      "type": "colors",
+      "paddingLeft": 2,
+      "symbol": "circle"
+    },
+    "break"
+  ]
+}
